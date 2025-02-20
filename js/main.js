@@ -15,6 +15,14 @@ mm.add({
 )
 */
 
+// GSAP Animation section 1 draggable ----------------------------
+
+gsap.to(".typewriter", {
+    duration: 2, // Durée de l'animation
+    width: "10.5ch", // Largeur correspondant au texte
+    ease: "steps(10)", // Effet "lettre par lettre"
+});
+
 // GSAP Animation section 2 draggable ----------------------------
 console.log("hello")
 
@@ -44,6 +52,35 @@ Draggable.create(".box", {
 });
 
 
+//GSAP animation on section 3 - The movie posters coming down in an asemetrical way
+
+gsap.from(".imgSec3", {
+    scrollTrigger: {
+        trigger: "#section3",
+        start: "top 100%",
+        end: "bottom 60%",
+        //scrub: 1, // Makes it scroll-synced
+        toggleActions: "play reset play reset",
+        markers: true,
+        scrub:1,
+    },
+    y: '-200vh',
+    stagger: 0.1 ,
+});
+
+gsap.from(".seven", {
+    scrollTrigger: {
+        trigger: "#section3",
+        start: "top 100%",
+        end: "bottom 60%",
+        //scrub: 1, // Makes it scroll-synced
+        toggleActions: "play reset play reset",
+        markers: true,
+        scrub:1,
+    },
+    y: '-600vh',
+    stagger: 0.4 ,
+});
 
 
 
@@ -71,23 +108,10 @@ gsap.from("#img2Sec4", {
         markers: true,
     },
     x: '100vw'
-});
+});w
 
 
 
-gsap.from(".imgSec3", {
-    scrollTrigger: {
-        trigger: "#section3",
-        start: "top 100%",
-        end: "bottom 60%",
-        //scrub: 1, // Makes it scroll-synced
-        toggleActions: "play reset play reset",
-        markers: true,
-        scrub:1,
-    },
-    y: '-200vh',
-    stagger: 0.1 ,
-});
 
 
 // GSAP animation - window 4 timeline
