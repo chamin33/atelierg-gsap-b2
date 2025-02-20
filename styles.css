@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 80px;
+    height: 20vw;
 
 }
 
@@ -17,9 +19,9 @@ body{
     /*width: auto;*/
     background-color: rgb(123, 30, 30);
     padding: 5%;
+    opacity: 0;
 
 }
-
 
 
 .window1{
@@ -29,6 +31,7 @@ body{
     align-items: center;
 
 }
+
 
 .photo{
 
@@ -44,10 +47,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(214, 214, 214);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .typewriter{
@@ -55,6 +59,7 @@ body{
     text-align: center;
     font-size: 18px;
     color: rgb(255, 255, 255);
+    width: 400px;
 
 }
 
@@ -96,18 +101,22 @@ body{
     border-radius: 10px;
     padding: 15px;
     transition: 0.1;
+    font-size: 15px;
 }
 
 .texte2{
 
     align-items: center;
     justify-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 .drop{
 
     align-items: center;
     justify-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -163,6 +172,9 @@ body{
     justify-items: center;
     margin: 5%;
     font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
 }
 
 
@@ -182,7 +194,11 @@ body{
 }
 
 .secttitle{
+
     color: beige;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+
 }
 
 .cardcontainer{
@@ -202,7 +218,7 @@ body{
 .card {
     width: 190px;    /*box size*/
     height: 290px;   /*box size*/
-    background-color: rgb(230, 173, 173);
+    background-color: rgb(191, 124, 124);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -215,12 +231,12 @@ body{
 }
 
 .text4{
-    color: azure;
+    color: rgb(255, 255, 255);
 }
 
 .secttitle{
     text-align: center;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .boxSec4{
@@ -245,15 +261,18 @@ body{
 
 #section5{
     background-color: rgb(136, 56, 56);
-    padding: 80px;    
+    padding: 80px;   
+    overflow: hidden;
+ 
 }
 
 .sect5title{
-    color: beige;
+    color: rgb(255, 255, 255);
     justify-content: center;
     display: flex;
     margin-bottom: 8%;
-    font-size: 30px;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
 
@@ -268,71 +287,45 @@ body{
 
 }
 
-/*The frist division of the timeline - 1960 ----------------------------------*/
+/*The division of the timeline ----------------------------------*/
 
 .first{
 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(224, 189, 189);
+    background-color: rgb(191, 124, 124);
     padding: 20px;
     border-radius: 6%;
-
+    opacity: 0;
 
 }
 
-.yearone{                          /*We are wroking in the first division to put a gap between the year and the date*/
+/*We are wroking in the first division to put a gap between the year and the date*/
+
+
+.yearone{                          
     margin-right: 80px;
+    color: white;
+    font-size: 20px;
 }
 
 .descr1{                           /*We are aligning the text to a certain direction to make it aestetic*/
     text-align: left;
-}
-
-/*The second division of the timeline - 1961 ----------------------------------*/
-
-.second{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(224, 189, 189);
-    padding: 20px;
-    border-radius: 6%;
-
+    color: white;
+    font-size: 20px;
 
 }
 
-.text2{                          /*We are wroking in the first division to put a gap between the date and the year*/
-    margin-right: 80px;
-}
-
-.yeartwo{                         /*We are aligning the year to a certain direction to make it aestetic*/
+.descr2{                      /*We are aligning the text to a certain direction to make it aestetic*/
     text-align: right;
-}
+    color: white;
+    font-size: 20px;
 
-/*The third and last division of the timeline - 1962 ----------------------------------*/
-
-.last{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(224, 189, 189);
-    padding: 20px;
-    border-radius: 6%;
 
 }
 
 
-.yearoneee{                          /*We are wroking in the last division to put a gap between the year and the date*/
-    margin-right: 80px;
-}
-
-.descr3{                      /*We are aligning the text to a certain direction to make it aestetic*/
-    text-align: right;
-}
 
 /*This is the division that closes our website with a little summary ----------------------------------*/
 
@@ -344,14 +337,17 @@ body{
     color: beige;
     justify-content: center;
     display: flex;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 6%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
-.summary{                      /*the parapgraph*/
+.summary{                      /*the ending note*/
    
     color: beige;
     margin-top: 10;
     text-align: center;
+    font-size: 25px;
 
 }

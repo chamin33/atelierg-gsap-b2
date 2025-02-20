@@ -17,13 +17,30 @@ mm.add({
 
 // GSAP Animation section 1 draggable ----------------------------
 
-gsap.to(".typewriter", {
+
+gsap.utils.toArray("#section1").forEach(element => {
+    gsap.to(element, {
+      opacity: 1,                            // Making the texte reappear since the oppacity in the css is at 0
+      ease: "none",
+      scrollTrigger: {
+        trigger: element,
+        start: "center 70%",
+        end: "center 30%",
+        //markers: true,
+        toggleActions: "play reverse play reverse"
+      }
+    })
+});
+
+
+/*gsap.to(".typewriter", {
     duration: 2, // Durée de l'animation
     width: "10.5ch", // Largeur correspondant au texte
     ease: "steps(10)", // Effet "lettre par lettre"
 });
-
+*/
 // GSAP Animation section 2 draggable ----------------------------
+
 console.log("hello")
 
 
@@ -58,14 +75,14 @@ gsap.from(".imgSec3", {
     scrollTrigger: {
         trigger: "#section3",
         start: "top 100%",
-        end: "bottom 60%",
+        end: "bottom 70%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
-        markers: true,
+        //markers: true,
         scrub:1,
     },
     y: '-200vh',
-    stagger: 0.1 ,
+    stagger: 0.2 ,        // Making the stagger less fast- smoother than 0.4 - accentuating the assemetrical effect
 });
 
 gsap.from(".seven", {
@@ -75,12 +92,27 @@ gsap.from(".seven", {
         end: "bottom 60%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
-        markers: true,
+        //markers: true,
         scrub:1,
     },
     y: '-600vh',
-    stagger: 0.4 ,
+    stagger: 0.4 ,       // Making the stagger more agressive - faster - accentuating the assemetrical effect
 });
+
+gsap.utils.toArray(".text3").forEach(element => {
+    gsap.to(element, {
+      opacity: 1, 
+      ease: "none",
+      scrollTrigger: {
+        trigger: element,
+        start: "center 80%",
+        end: "center 40%",
+        //markers: true,
+        toggleActions: "play reverse play reverse"
+      }
+    })
+});
+
 
 
 
@@ -93,7 +125,7 @@ gsap.from("#img1Sec4", {
         end: "bottom 0%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
-        markers: true,
+        //markers: true,
     },
     x: '-100vw'
 });
@@ -105,10 +137,43 @@ gsap.from("#img2Sec4", {
         end: "bottom 0%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
-        markers: true,
+        //markers: true,
     },
     x: '100vw'
-});w
+});
+
+
+//Gsap demo animation - Section 4 - the award images arrival from the sides 
+
+// The animation used to make the elements appear in fade in and out
+gsap.utils.toArray(".first").forEach(element => {
+  gsap.to(element, {
+    opacity: 1,                           // Making the texte reappear since the oppacity in the css is at 0
+    ease: "none",
+    scrollTrigger: {
+      trigger: element,
+      start: "center 70%",
+      end: "center 30%",
+      //markers: true,
+      toggleActions: "play reverse play reverse"
+    }
+  })
+});
+
+// make the ending statement appear from the side
+gsap.from(".endingdiv", {
+    scrollTrigger: {
+        trigger: "#section5",
+        start: "top 100%",                     // positioning the whole div in the center when completely scrolling down
+        end: "bottom 100%",                    // positioning the whole div in the center when completely scrolling down
+        ease: "none",
+        scrub: 1,                                     // Makes it scroll-synced
+        toggleActions: "play reset play reset",
+        //markers: true,
+    },
+    x: '200vw'
+});
+
 
 
 
