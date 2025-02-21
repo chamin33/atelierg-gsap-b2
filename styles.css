@@ -426,6 +426,7 @@ body{
 
 /*section 5--------------------------------------------*/
 
+
 .sect5title{
     text-align: center;
 }
@@ -437,6 +438,19 @@ body{
 
 .summary{
     font-size: 15px;
+    text-align: center;
+}
+
+.first{
+    flex-direction: column;
+}
+
+.descr1{
+    text-align: center;
+
+}
+
+.yearone{
     text-align: center;
 }
     
