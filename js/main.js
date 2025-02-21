@@ -17,19 +17,15 @@ mm.add({
 
 // GSAP Animation section 1 draggable ----------------------------
 
-
-gsap.utils.toArray("#section1").forEach(element => {
-    gsap.to(element, {
-      opacity: 1,                            // Making the texte reappear since the oppacity in the css is at 0
-      ease: "none",
-      scrollTrigger: {
-        trigger: element,
-        start: "center 70%",
-        end: "center 30%",
+gsap.to('#section1', {
+    opacity: 1,                    // Making the texte reappear since the oppacity in the css is at 0
+    scrollTrigger: {
+        trigger: '#section1',
+        start: "top 10%",
+        end: "bottom 30%",
         //markers: true,
         toggleActions: "play reverse play reverse"
-      }
-    })
+    }
 });
 
 
@@ -41,7 +37,6 @@ gsap.utils.toArray("#section1").forEach(element => {
 */
 // GSAP Animation section 2 draggable ----------------------------
 
-console.log("hello")
 
 
 Draggable.create(".box", {
@@ -61,7 +56,7 @@ Draggable.create(".box", {
                 boxAnswer.classList.remove('goodAnswer');
                 boxAnswer.classList.add('badAnswer');
             }
-        } else {
+        }   else {
             boxAnswer.classList.remove('goodAnswer');
             boxAnswer.classList.remove('badAnswer');
         }
@@ -74,14 +69,14 @@ Draggable.create(".box", {
 gsap.from(".imgSec3", {
     scrollTrigger: {
         trigger: "#section3",
-        start: "top 100%",
-        end: "bottom 70%",
+        start: "top 40%",
+        end: "bottom 100%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
         //markers: true,
         scrub:1,
     },
-    y: '-200vh',
+    y: '-600vh',
     stagger: 0.2 ,        // Making the stagger less fast- smoother than 0.4 - accentuating the assemetrical effect
 });
 
@@ -89,30 +84,15 @@ gsap.from(".seven", {
     scrollTrigger: {
         trigger: "#section3",
         start: "top 100%",
-        end: "bottom 60%",
+        end: "bottom 0%",
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
         //markers: true,
         scrub:1,
     },
-    y: '-600vh',
-    stagger: 0.4 ,       // Making the stagger more agressive - faster - accentuating the assemetrical effect
+    y: '-400vh',
+    stagger: 0.2 ,       // Making the stagger more agressive - faster - accentuating the assemetrical effect
 });
-
-gsap.utils.toArray(".text3").forEach(element => {
-    gsap.to(element, {
-      opacity: 1, 
-      ease: "none",
-      scrollTrigger: {
-        trigger: element,
-        start: "center 80%",
-        end: "center 40%",
-        //markers: true,
-        toggleActions: "play reverse play reverse"
-      }
-    })
-});
-
 
 
 
@@ -122,7 +102,8 @@ gsap.from("#img1Sec4", {
     scrollTrigger: {
         trigger: "#section4",
         start: "top 100%",
-        end: "bottom 0%",
+        end: "bottom 100%",
+        scrub: 1,
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
         //markers: true,
@@ -134,7 +115,8 @@ gsap.from("#img2Sec4", {
     scrollTrigger: {
         trigger: "#section4",
         start: "top 100%",
-        end: "bottom 0%",
+        end: "bottom 100%",
+        scrub: 1,
         //scrub: 1, // Makes it scroll-synced
         toggleActions: "play reset play reset",
         //markers: true,
@@ -143,13 +125,12 @@ gsap.from("#img2Sec4", {
 });
 
 
-//Gsap demo animation - Section 4 - the award images arrival from the sides 
+//Gsap demo animation - Section 5 - the award images arrival from the sides 
 
 // The animation used to make the elements appear in fade in and out
 gsap.utils.toArray(".first").forEach(element => {
   gsap.to(element, {
     opacity: 1,                           // Making the texte reappear since the oppacity in the css is at 0
-    ease: "none",
     scrollTrigger: {
       trigger: element,
       start: "center 70%",
