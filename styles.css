@@ -87,7 +87,8 @@ body{
 
     width: 150px;    /*box size*/
     height: 100px;   /*box size*/
-    background-color: rgb(230, 173, 173);
+    background-color: rgb(105, 44, 44);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +108,7 @@ body{
     justify-items: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    font-size: 20px;
 
 }
 
@@ -122,7 +124,7 @@ body{
 #boxanswer{
     width: 190px;    /*box size*/
     height: 150px;   /*box size*/
-    background-color: rgb(230, 173, 173);
+    background-color: rgb(105, 44, 44);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +234,7 @@ body{
     font-size: 13px;
     font-weight: bold;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .text4{
@@ -261,6 +263,9 @@ body{
     width: 100%;
 }
 
+.award{
+    font-size: 25xp;
+}
 
 /*Section 5 ----------------------------*/
 
@@ -363,7 +368,10 @@ body{
 
 /* Media Queries */
 @media (max-width:800px) {
-    /*section 1*/
+
+
+/*section 1------------------------------------------------*/
+
 .window1{
    flex-direction: column;
 }
@@ -381,16 +389,42 @@ body{
 .typewriter{
     width: 100%;
 }
-    /*Section 2*/
+
+.texte2{
+    font-size: 15px;
+}
+
+/*Section 2-----------------------------------------------------*/
+
 .boxanswer{
     width: 100px;
 }
-       /*section 3*/
+
+/*section 3--------------------------------------------*/
 
 .imgSec3{
     width: 100%;
 }
-       /*section 5*/
+
+/*section 4--------------------------------------------*/
+
+.boxSec4{
+    width: 215px;
+}
+
+.card{
+    width: 100px;
+}
+
+.award{
+    font-size: 10px;
+}
+
+.imageCardSec4{
+    width: 100px;
+}
+
+/*section 5--------------------------------------------*/
 
 .sect5title{
     text-align: center;
