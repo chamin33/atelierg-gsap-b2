@@ -5,7 +5,18 @@
     align-items: center;
     text-align: center;
     font-size: 60px;
-    height: 20vw;
+    height: 10vw;
+
+}
+
+.soustitle1{                        
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    height: 10vw;
 
 }
 
@@ -369,6 +380,12 @@ body{
 /* Media Queries */
 @media (max-width:800px) {
 
+/*title--------------------------------*/
+
+.soustitle1{
+    font-size: 15px;
+    padding: 30px;
+}
 
 /*section 1------------------------------------------------*/
 

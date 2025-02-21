@@ -128,8 +128,8 @@ gsap.from("#img2Sec4", {
 //Gsap demo animation - Section 5 - the award images arrival from the sides 
 
 // The animation used to make the elements appear in fade in and out
-gsap.utils.toArray(".first").forEach(element => {
-  gsap.to(element, {
+gsap.utils.toArray(".first").forEach(element => {   //selects evey element that contains the class named "first", using the array function will mean that the animation will be stored in the class
+  gsap.to(element, {                      // It applies the animation the the elements that we selected
     opacity: 1,                           // Making the texte reappear since the oppacity in the css is at 0
     scrollTrigger: {
       trigger: element,
