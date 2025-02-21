@@ -114,6 +114,7 @@ body{
 
     align-items: center;
     justify-items: center;
+    text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
@@ -148,7 +149,7 @@ body{
 /*section 3*/
 
 #section3{
-    background-color: rgb(136, 56, 56);
+    background-color: rgb(123, 30, 30);
     padding: 50px;
     overflow: hidden;
 }
@@ -187,7 +188,8 @@ body{
 #section4{
     overflow-x: hidden;
     padding: 30px;
-    background-color: rgb(85, 22, 22);
+    background-image: url(assets/img/paper.png);
+
 }
 
 #everything{
@@ -198,7 +200,7 @@ body{
 
 .secttitle{
 
-    color: beige;
+    color: rgb(23, 16, 16);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
 
@@ -213,7 +215,7 @@ body{
     max-width: 400px;
     margin: 0 auto;
     padding: 50px;
-    background-color: blanchedalmond;
+    background-color: rgb(105, 44, 44);
     border-radius: 2%;
 }
 
@@ -221,7 +223,7 @@ body{
 .card {
     width: 190px;    /*box size*/
     height: 290px;   /*box size*/
-    background-color: rgb(191, 124, 124);
+    background-color: rgb(255, 244, 244);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,8 +265,8 @@ body{
 /*Section 5 ----------------------------*/
 
 #section5{
-    background-color: rgb(136, 56, 56);
-    padding: 80px;   
+    background-color: rgb(123, 30, 30);
+    padding: 70px;   
     overflow: hidden;
  
 }
@@ -276,6 +278,7 @@ body{
     margin-bottom: 8%;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
 
 }
 
@@ -343,6 +346,8 @@ body{
     font-size: 50px;
     margin-bottom: 6%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+
 
 }
 
@@ -358,7 +363,7 @@ body{
 
 /* Media Queries */
 @media (max-width:800px) {
-    
+    /*section 1*/
 .window1{
    flex-direction: column;
 }
@@ -376,15 +381,29 @@ body{
 .typewriter{
     width: 100%;
 }
-
+    /*Section 2*/
 .boxanswer{
     width: 100px;
 }
+       /*section 3*/
 
 .imgSec3{
     width: 100%;
 }
+       /*section 5*/
 
+.sect5title{
+    text-align: center;
+}
+       
+.endingnote{
+    font-size: 30px;
+    text-align: center;
+}
 
+.summary{
+    font-size: 15px;
+    text-align: center;
+}
     
 }
